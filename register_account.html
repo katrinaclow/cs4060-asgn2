@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <!-- Navigation Bar  -->
+    <div class="header">
+        <a href="#default" class="logo">Trademark Registration Centre</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="browse_trademarks.html">Browse Existing Trademarks</a>
+            <a href="register_trademarks.html">Register Trademark</a>
+            <a href="faq.html">FAQ</a>
+            <a class="active" href="register_account.html">Register Account</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <div class="form" id="form">
+        <form method="post" action=form.php>
+            <h2>Trademark Registration Form</h2>
+            <!-- Contact information  -->
+            <h4>Contact Information</h4>
+
+            <label for="First Name">First Name:</label>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="Last Name">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="Email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="Phone Number">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="000-000-0000"><br>
+
+            <label for="Address1">Address Line 1:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="Address2">Address Line 2:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="Postal Code">Postal Code:</label>
+            <input type="text" id="email" name="email"><br>
+
+
+            <label for="Province">Province or Territory:</label>
+            <select id="title" name="title">
+                <option value="">Select a Province/Territory:</option>
+                <option value="AB">Alberta</option>
+                <option value="BC">British Columbia</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewanl</option>
+                <option value="YK">Yukon</option>
+            </select><br>
+
+            <div><input type="submit" name="submit" value="Register"></div>
+        </form>
+    </div>
+
+</body>
+
+</html>

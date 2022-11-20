@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Trademark</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <!-- Navigation Bar  -->
+    <div class="header">
+        <a href="#default" class="logo">Trademark Registration Centre</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="browse_trademarks.html">Browse Existing Trademarks</a>
+            <a class="active" href="register_trademarks.html">Register Trademark</a>
+            <a href="faq.html">FAQ</a>
+            <a href="register_account.html">Register Account</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+
+    <div class="form" id="form">
+        <form method="post" action=form.php>
+            <h2>Trademark Registration Form</h2>
+            <!-- Contact information  -->
+            <h4>Contact Information</h4>
+
+            <label for="First Name">First Name:</label>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="Last Name">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="Email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="Phone Number">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="000-000-0000"><br>
+
+            <!-- Trademark Details -->
+            <h4>Trademark Details</h4>
+
+            <label for="Trademark Name">Trademark Name:</label>
+            <input type="text" id="tmname" name="tmname"><br>
+
+            <label for="Trademark Category">Choose a category:</label>
+            <select id="title" name="title">
+                <option value="">Select a Category:</option>
+                <option value="Class01">Advertising, Business and Retail</option>
+                <option value="Class02">Insurance and Financial</option>
+                <option value="Class03">Construction and Repair</option>
+                <option value="Class04">Communication</option>
+                <option value="Class05">Transportation and Storage</option>
+                <option value="Class06">Treatment and Processing of Materials</option>
+                <option value="Class07">Education and Entertainment</option>
+                <option value="Class08">Computer and Software Services and Scientific</option>
+                <option value="Class09">Restaurant and Hotel</option>
+                <option value="Class10">Medical and Beauty Services and Agricultural</option>
+                <option value="Class11">Personal, Legal and Social</option>
+            </select><br>
+
+            <label for="expiry">Set expiry:</label>
+            <select id="size" name="size">
+                <option value="">Select a expiry limit:</option>
+                <option value="1year">1 year</option>
+                <option value="3year">3 years</option>
+                <option value="5year5">5 years</option>
+                <option value="10year" selected>10 years</option>
+            </select>
+
+            <div><input type="submit" name="submit" value="Register"></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
